@@ -12,9 +12,9 @@ The aim is to optimise and learn. The learning will come in many aspects in opti
 
 ### Changelog
 
-|**Version**   |**Changes**   |
-|:----:    |:----------|
-|**0.0.0**     |- Added CMake to get vulkan glfw and render a executable <br> - Added A basic glfw window
+|**Version**    |**Changes**    |
+|:-------------:|:--------------|
+|**0.0.0**      |- Added CMake to get vulkan glfw and render a executable <br> - Added A basic glfw window
 
 ---
 
@@ -23,3 +23,8 @@ The aim is to optimise and learn. The learning will come in many aspects in opti
 - [ ] Initialise Vulkan
 - [ ] Make the instalation better
 - [ ] Memmory managemnt
+
+
+## Materials Refrenced
+1. [Vulkan Tutorial By ~Alexander Overvoorde](https://vulkan-tutorial.com/)
+2. [Vulkan Specification By Khronos](https://docs.vulkan.org/spec/latest/)

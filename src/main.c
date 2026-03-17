@@ -1,25 +1,24 @@
 #define GLFW_INCLUD_VULKAN
 
+#include "u_std.h"
+#include "u_window.h"
+#include "u_initialiseVk.h"
+
 #include <stdio.h>
-#include <stdlib.h>
-#include "GLFW/glfw3.h"
-#include "vulkan\vulkan.h"
 
 int main(){
     printf("I run after four hours! sleepless\n");
 
-    glfwInit();
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+    u_createWindow();
+    u_createInstanceVk();
 
-    GLFWwindow* window = glfwCreateWindow(500,500,"NULL",NULL,NULL);
-
-    while(!glfwWindowShouldClose(window)){
+    while(!glfwWindowShouldClose(u_window)){
         glfwPollEvents();
     }
 
-    glfwTerminate();
+    u_destroyWindow();
+    u_destroyInstanceVk();
     printf("the end");
 
-    return EXIT_SUCCESS;
+    return U_SUCCESS;
 }
